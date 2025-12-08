@@ -71,12 +71,14 @@ let result =
     || div ();
     let errEnd;
     let res;
+
     if (result === undefined) {
        errEnd = confirm('Ошибка! Начать сначала?');
     }
     else {
        res = confirm(`Результат: ${result}`);
     }
+
     if ( errEnd == true ) {
         continue reset;
     }
@@ -84,16 +86,18 @@ let result =
         break;
     } 
     let exit;
-    if (res == true){
+
+    if (res == true) {
         continue reset;
     } 
-    else if (res == false){
+    else if (res == false) {
         exit = confirm('Выйти из программы?');
     }  
-    if (exit == true){
+
+    if (exit == true) {
         break;
     }
-    else if (exit == false){
+    else if (exit == false) {
         alert(result);
         
     }
